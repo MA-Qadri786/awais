@@ -1,0 +1,90 @@
+$color: red;
+$bg: yellow;
+$font-size: 50px;
+
+$bg1: crimson;
+$height: 100px;
+$width: 100%;
+$position: relative;
+$top: 0;
+$float: left;
+$padding: 20px;
+$color1: #fff;
+$text: none;
+$list: none;
+
+$name: "M.Awais Qadri";
+
+$bolean: true;
+
+$null: null;
+
+
+
+
+
+
+
+
+
+
+@function abc($a, $b){
+
+    @return $a+$b;
+    }
+    
+    nav{
+    
+        margin:abc(20px, 30px);
+    }
+    
+    
+    @function color()
+    {
+        @return 20px; 
+    }
+    nav {
+    margin-top: color();
+    }
+    
+    @function cal(){
+        @return "M.Awais Qadri";
+    }
+    nav:before{
+    content:cal();
+    }
+    
+    @function name($firstname, $lastName){
+        @return $firstname + $lastName;
+    }
+    nav:before{
+        position: relative;
+        left: 100px;
+        content: name("Awais","Qadri");
+    }
+    
+    
+    // @function arslan($first, $last){
+    //     @return $first + $last;
+    
+    // }
+    
+    // nav:before{
+    //     content: arslan("M", "Maham");
+    //     position: relative;
+    //     top: 100px;
+    
+    // }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

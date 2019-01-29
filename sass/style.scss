@@ -1,0 +1,118 @@
+%hmm{
+    color: yellow;
+    
+}
+
+$var: haseeb;
+
+@for $i from 1 to 4{
+    .col-#{$i}{
+        width: $i * 200px;
+    }
+}
+
+
+
+
+
+h3{
+    color: red;
+    @if $var == hasee{
+        font-size: 100px;
+    }
+    @else if $var == haseeb{
+        font-size: 200px;
+    }
+    @else{
+        font-size: 10px
+
+    }
+}
+
+
+
+
+
+
+$name1 : normal;
+// @import "import";
+
+// @for $i from 1 to 5{
+//     .col-#{$i}{
+//         width: $i *2;
+//     }
+// }
+h1{
+    @if $name1 == high{
+        font-size: 100px;
+    }@else if $name1 == low{
+        font-size: 120px;
+
+    }
+    @else{
+        font-size: 50px;
+    }
+    
+}
+
+
+
+// @mixin custom{
+//     background-color: $bg1;
+//     height: $height;
+//     width: $width;
+// }
+
+
+// nav{
+//     // background-color: $bg1;
+//     // height: $height;
+//     // width: $width;
+//     @include custom;
+//     ul{
+//         position: $position;
+//         top: $top;
+
+//         li{
+//             float: $float;
+//             list-style: $list;
+//             padding: $padding $padding+20; //DMAS
+//             a{
+//                 text-decoration: $text;
+//                 color: $color1;
+                
+//             }
+//             &:hover{
+//                 background-color: green;
+//                 padding: $padding;
+//             }
+//         }
+//     }    
+// }
+
+
+
+// @mixin padding{
+//     border: 2px solid;
+// }
+
+// h2.error{
+//     color: yellow;
+//     font-size: 40px;
+//     padding: 40px;
+// }
+// .e{
+    
+//     background-color: crimson;
+//     font-weight: 500;
+//     @extend h2.error;
+// }
+// h4{
+//  @extend %high;
+//     @include padding;
+// }
+
+
+// %high{
+//     color: green;
+// }
